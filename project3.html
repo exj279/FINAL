@@ -8,6 +8,7 @@
 <style>
     img {
         max-width: 100%;
+        display: flex;
     }
     header{
         text-transform: uppercase;
@@ -51,6 +52,42 @@
     .gallery img {
         width: 25%;
     } 
+    .gallery figure img{
+        width: 100%
+    }
+    figure{
+        margin: 0;
+        position: relative;
+    }
+    figcaption{
+        background: white;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 1s;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    figure:hover figcaption{
+        opacity: 1;
+    }
+    h4{
+        text-transform: uppercase;
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 40px;
+    }
+
 </style>
 <body>
     <div>
@@ -60,19 +97,74 @@
         <div class="box1">
             <h1>BARCELONA</h1>
             <div class="gallery">
-            <img src="Barcelona/IMG_2394.jpg" alt="">
-            <img src="Barcelona/IMG_2394.jpg" alt="">
-            <img src="Barcelona/IMG_2394.jpg" alt="">
-            <img src="Barcelona/IMG_2394.jpg" alt="">
+            <img src="Barcelona/IMG_9823.jpg" alt="">
+            <figure>
+            <img src="Barcelona/IMG_8108.jpg" alt="">
+            <figcaption>Casa Batlló</figcaption>
+            </figure>
+            <img src="Barcelona/IMG_8896.jpg" alt="">
+            <figure>
+            <img src="Barcelona/IMG_9317.jpg" alt="">
+            <figcaption>Casa Milà</figcaption>
+            </figure>
             </div>
+            <div class="gallery">
+            <img src="Barcelona/IMG_9330.jpg" alt=""> 
+            <img src="Barcelona/IMG_9361.jpg" alt="">  
+            <img src="Barcelona/IMG_8288.jpg" alt="">
+            <figure>
+            <img src="Barcelona/IMG_9792.jpg" alt="">
+            <figcaption>Park Güell</figcaption>
+            </figure>
+            </div>
+        
 
 
         </div>
         <div class="box2">
             <h2>BERLIN</h2>
+            <div class="gallery">
+            <img src="Berlin/IMG_0471.jpg" alt="">
+            <img src="Berlin/IMG_0500.jpg" alt="">
+            <img src="Berlin/IMG_0727.jpg" alt="">
+            <figure>
+            <img src="Berlin/IMG_0568.jpg" alt="">
+            <figcaption>Picknweight</figcaption>
+            </figure>
+            </div>
+            <div class="gallery">
+            <img src="Berlin/IMG_0957.jpg" alt="">
+            <figure>
+            <img src="Berlin/IMG_2524.jpg" alt="">
+            <figcaption>C/O Berlin</figcaption>
+            </figure>
+            <img src="Berlin/IMG_1483.jpg" alt="">
+            <img src="Berlin/IMG_0552.jpg" alt="">
+            </div>
         </div>
         <div class="box3">
             <h3>LONDON</h3>
+            <div class="gallery">
+            <figure>
+            <img src="London/IMG_3623.jpg" alt="">
+            <figcaption>National Gallery</figcaption>
+            </figure>
+            <img src="London/IMG_3540.jpg" alt="">
+            <img src="London/IMG_3250.jpg" alt="">
+            <img src="London/IMG_3585.jpg" alt="">
+            </div>
+            <div class="gallery">
+            <img src="London/IMG_4240.jpg" alt="">
+            <figure>
+            <img src="London/IMG_4072.jpg" alt="">
+            <figcaption>Primrose Hill</figcaption>
+            </figure>
+            <img src="London/IMG_3311.jpg" alt="">
+            <img src="London/IMG_3758.jpg" alt="">
+            </div>
+        </div>
+        <div>
+            <h4>TO BE CONTINUED...</h4>
         </div>
     </main>
 </body>
